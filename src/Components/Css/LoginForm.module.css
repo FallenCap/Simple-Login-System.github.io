@@ -49,12 +49,16 @@ form input:focus-visible {
 form button {
   padding: 15px 35px;
   border: none;
-  background-image: linear-gradient(to bottom right, #025091, #71c5ee);
+  /* background-image: linear-gradient(to bottom right, #025091, #71c5ee); */
+  background-color: #025091;
   color: white;
   font-size: 1.2rem;
   border-radius: 2rem;
+  transition: background-color 1s ease-out;
 }
 form button:hover {
-  background: linear-gradient(to bottom right, #71c5ee, #025091);
-  color: white;
+  /* background-image: linear-gradient(to bottom right, #71c5ee, #025091); */
+  background-color: #71c5ee;
+  color: #2d2d2d;
+  cursor: pointer;
 }

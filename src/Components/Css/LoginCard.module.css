@@ -7,3 +7,12 @@
   border-radius: 12px;
   box-shadow: 0px 0px 20px 3px #2d2d2d;
 }
+
+.heading {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  color: #4a4a4a;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
