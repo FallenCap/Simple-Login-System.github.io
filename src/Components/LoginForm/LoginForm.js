@@ -63,7 +63,7 @@ const LoginForm = (props) => {
             <label>Name</label>
             <input
               type="text"
-              value={enteredName}
+              placeholder={enteredName}
               onChange={nameChangeHandler}
             />
           </div>
@@ -71,16 +71,15 @@ const LoginForm = (props) => {
             <label>Email</label>
             <input
               type="email"
-              value={enteredEmail}
+              placeholder={enteredEmail}
               onChange={emailChangeHandler}
-              placeholder="Enter your email address"
             />
           </div>
           <div className={styles['from-group-signin']}>
             <label>Password</label>
             <input
               type="password"
-              value={enteredPassword}
+              placeholder={enteredPassword}
               onChange={passwordChangeHandler}
             />
           </div>
@@ -104,7 +103,7 @@ const LoginForm = (props) => {
           <label>Password</label>
           <input
             type="password"
-            value={loginPassword}
+            placeholder={loginPassword}
             onChange={loginPasswordHandler}
           />
         </div>

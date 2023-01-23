@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../Css/LoginCard.module.css';
 import LoginForm from './LoginForm';
+import WelcomeText from './WelcomeText';
 
 const LoginCard = (props) => {
   const [passedLoginData, setPassedLogInData] = useState();
@@ -19,9 +20,11 @@ const LoginCard = (props) => {
   return passedLoginData &&
     passedLoginData.email === signinData.email &&
     passedLoginData.password === signinData.password ? (
-    <div className={styles.card}>
-      <h2 className={styles.heading}>Welcome {signinData.name}</h2>
-    </div>
+    props.passSaveData.map((signin) => (
+      <div className={styles.card}>
+        <WelcomeText name={signin.name} />
+      </div>
+    ))
   ) : (
     <div className={styles.card}>
       <LoginForm
